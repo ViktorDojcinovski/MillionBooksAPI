@@ -1,0 +1,48 @@
+{
+  "config": {
+    "locale": "en"
+  },
+  "model": {
+    "id": {
+      "type": "randomNumberBetween",
+      "value": [
+        1,
+        2500000
+      ]
+    },
+    "name": {
+      "type": "faker",
+      "value": "lorem.words"
+    },
+    "genre": {
+      "type": "faker",
+      "value": "random.word",
+      "options": [
+        "drama",
+        "horror",
+        "finance"
+      ]
+    },
+    "date": {
+      "type": "faker",
+      "value": "date.between",
+      "options": [
+        "2019-01-02",
+        "2019-12-29"
+      ]
+    },
+    "author": {
+      "type": "Object",
+      "value": {
+        "firstName": {
+          "type": "faker",
+          "value": "name.firstName"
+        },
+        "lastName": {
+          "type": "faker",
+          "value": "name.lastName"
+        }
+      }
+    }
+  }
+}
