@@ -41,6 +41,10 @@
         "lastName": {
           "type": "faker",
           "value": "name.lastName"
+        },
+        "gender": {
+          "type": "faker",
+          "value": "name.gender"
         }
       }
     }
